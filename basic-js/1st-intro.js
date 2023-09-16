@@ -9,6 +9,10 @@ accountCity="delhi"
 //accountId=2 // not allowed
 console.log(accountId);
 console.log(accountPassword);
+/*
+prefer not to use var :- because issue in functional scope and block scope
+*/
 console.table([accountId,accountPassword,accountemail,accountCity]);
+
 
 
