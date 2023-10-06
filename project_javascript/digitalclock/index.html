@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalClock</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        .clock{
+     background-color: black;
+     color: blanchedalmond;
+     height: 20px;
+     width: 70px;
+     border-radius: 4px;
+     margin-top: 300px;
+     margin-left: 640px;
+     padding: 20px;
+     font-weight: 1000;
+     font-style: oblique;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .digi{
+            margin-left:610px ;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(7, 128, 87);">
+    <div class="clock">
+        
+    </div>
+    <h1 class="digi">Digital clock</h1>
+    
+
+</body>
+
+<script>
+const clock=document.querySelector(".clock");
+
+    setInterval(()=>{
+  let date=new Date;
+  clock.innerHTML=date.toLocaleTimeString();
+    },1000)
+</script>
+</html>
